@@ -1,30 +1,36 @@
-# Book Management System
+# Book Management System UI
 
-A book management system built using Node.js, Prisma, Apollo Client, and JavaScript. This system allows users to perform CRUD operations on books.
+This is the frontend application for the Book Management System. It is built using React, Apollo Client, and JavaScript. The frontend allows users to interact with the book management system through a user-friendly interface.
 
 ## Features
 
-- Create, Read, Update, and Delete books
-- Built with a Node.js server using Express
-- Utilizes Prisma as the ORM for connecting to a MySQL database
-- Implements GraphQL APIs using Apollo Server
-- Includes proper validation and error handling for the APIs
+- Display a list of books with titles, authors, and publication years.
+- Add new books with proper validation for required fields.
+- Edit and delete existing books.
+- Implements Apollo Client to communicate with the GraphQL backend.
 
-## Setup and Installation
+## Getting Started
+
+To run the frontend application locally, follow these steps:
 
 ### Prerequisites
 
 - Node.js (v14 or higher) should be installed on your machine.
-- A MySQL database should be set up and accessible.
 
 ### Installation
 
 1. Clone this repository to your local machine.
-2. Navigate to the project directory: `cd book-management-system`.
+2. Navigate to the project directory: `cd book-management-system-frontend`.
 3. Install the dependencies: `npm install`.
 
-### Database Configuration
+### Configuration
 
-1. Open the `.env` file in the project root directory.
-2. Update the database connection details according to your MySQL configuration.
+1. Open the `src/index.js` file.
+2. Update the `uri` property in the `ApolloClient` configuration to the appropriate URL of your backend server. By default, it is set to `http://localhost:4000/graphql`.
 
+### Starting the Application
+
+1. Run the following command to start the application:
+
+   ```bash
+   npm start
